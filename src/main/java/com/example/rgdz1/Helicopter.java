@@ -104,20 +104,24 @@ public class Helicopter extends Group {
         heightIndicatorDown.setFill(Color.BLUE);
         heightIndicatorDown.setTranslateX(-winWidth / 2 + 30);
         heightIndicatorDown.setTranslateY(-winHeight / 4 - 140);
+        heightIndicatorDown.setOpacity(0.7);
         heightIndicatorUp = new Rectangle(SPEED_INDICATOR_HEIGHT, SPEED_INDICATOR_WIDTH);
         heightIndicatorUp.setFill(Color.RED);
         heightIndicatorUp.setTranslateX(-winWidth / 2 + 30);
         heightIndicatorUp.setTranslateY(-winHeight / 4 - 140);
+        heightIndicatorUp.setOpacity(0.7);
 
         speedIndicator = new Rectangle(SPEED_INDICATOR_WIDTH, SPEED_INDICATOR_HEIGHT);
         speedIndicator.setFill(Color.BLUE);
         speedIndicator.setRotate(90);
         speedIndicator.setTranslateX(winWidth / 4 + 55);
         speedIndicator.setTranslateY(-winHeight / 4 - 55);
+        speedIndicator.setOpacity(0.7);
         speedCircle = new Circle(SPEED_INDICATOR_HEIGHT / 2, Color.RED);
         speedCircle.setCenterX(speedCircleX + winWidth / 4 + 55);
         speedCircleY = -winHeight / 4 - 55 + SPEED_INDICATOR_HEIGHT / 2;
         speedCircle.setCenterY(speedCircleY);
+        speedCircle.setOpacity(0.7);
 
         flyUppAnimation = new Timeline(
                 new KeyFrame(
@@ -163,16 +167,19 @@ public class Helicopter extends Group {
         scale.setFill(Color.TRANSPARENT);
         scale.setStroke(Color.BLACK);
         scale.setStrokeWidth(5);
+        scale.setOpacity(0.7);
 
         this.val = new Arc(arcPosX, arcPosY, 50, 50, 180, -40);
         val.setType(ArcType.OPEN);
         val.setFill(Color.TRANSPARENT);
         val.setStroke(Color.RED);
         val.setStrokeWidth(5);
+        val.setOpacity(0.7);
 
         this.needle = new Line(0, 0, 50,0);
         this.needle.setFill ( Color.BLACK );
         this.needle.setStrokeWidth(5);
+        this.needle.setOpacity(0.7);
         this.needle.getTransforms ( ).addAll (
                 new Translate( arcPosX, arcPosY)
         );
