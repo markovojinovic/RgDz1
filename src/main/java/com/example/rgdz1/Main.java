@@ -89,8 +89,8 @@ public class Main extends Application {
         root.getChildren().addAll(obstacles);
         root.getChildren().addAll(new StackPane(timerLabel));
         timerLabel.setTranslateY(Main.WINDOW_HEIGHT / 2 - 50);
-        timerLabel.setTranslateX(-20);
-        timerLabel.setStyle("-fx-font-weight: bold; -fx-text-fill: red; -fx-font-size: 20px;");
+        timerLabel.setTranslateX(-40);
+        timerLabel.setStyle("-fx-font-weight: bold; -fx-text-fill: red; -fx-font-size: 40px;");
 
         ImageView img = new ImageView(new Image("file:grass.png"));
         img.setPreserveRatio(true);

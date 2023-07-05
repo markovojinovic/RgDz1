@@ -164,7 +164,7 @@ public class Helicopter extends Group {
         scale.setStroke(Color.BLACK);
         scale.setStrokeWidth(5);
 
-        this.val = new Arc(arcPosX, arcPosY, 50, 50, 180, -60);
+        this.val = new Arc(arcPosX, arcPosY, 50, 50, 180, -40);
         val.setType(ArcType.OPEN);
         val.setFill(Color.TRANSPARENT);
         val.setStroke(Color.RED);
