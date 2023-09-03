@@ -11,7 +11,7 @@ public class Obstacle extends Rectangle {
     public Obstacle(double width, double height, Translate position){
         super(width, height);
         super.getTransforms().addAll(position);
-        Image img = new Image("file:wood.jpg");
+        Image img = new Image("file:assets/wood.jpg");
         super.setFill(new ImagePattern(img));
     }
 
